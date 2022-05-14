@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.4s;
+        }
+
+        header.sticky {
+            transition: 0.5s;
+            background: #fff;
+            padding: 20px 100px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        header ul {
+            position: relative;
+            display: flex;
+        }
+
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+
+          header ul li a {
+            position: relative;
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 100px;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#swimming">Swimming</a></li>
+            <li><a href="#strokes">Strokes</a></li>
+            <li><a href="#me">My favorite things</a></li>
+        </ul>
+    </header>
+    <section id="swimming">
+        <div >
+            <h3>Swimming</h3>
+            <p>It's a sport based on the buoyancy of the human body. <br> It consists of moving through the water certain distances in the shortest possible time. It's usually cataloged as one of the most complete sports when it comes to training the body. It has a great technical complexity and at the same time demands incredible physical ability. <br>
+                It has been practiced for more than 9000 years but was only included in the Olympic Games in 1896.</p>
+        </div>
+        <div >
+            <img src="../images/swimming.jpg" alt="swimming">
+        </div>
+    </section>
+    <section id="strokes">
+        <div>
+            <h3>Strokes</h3>
+            <p>In swimming there are 4 main strokes. Butterfly, backstroke, breaststroke and crawl. <br>
+                When it comes to competition, crawl is replaced by freestyle, which means you can swim any of the 4 strokes.</p>
+        </div>
+        <div >
+            <img src="../images/strokes.jpg" alt="swimming">
+        </div>
+    </section>
+    <section id="me">
+        <div>
+            <h3>My favorite things about swimming</h3>
+            <p>If I had to choose the word that best defines this sport, it would be feeling.
+                It is a sport that, in order to improve, forces you to develop your senses in order to feel the water. <br> It is a sport that rewards your ability to feel the masses of water in order to push them and move forward. <br>
+                If it is already nice to be relaxed in calm waters, once you have developed that sensitivity, <br> being in the water becomes incredible.</p>
+        </div>
+        <div>
+            <h4>My favorites swimmers are:</h4>
+            <ol>
+                <li>Caeleb Dressel
+                    <img src="../images/dressel.webp" alt="Dressel">
+                </li>
+                <li>Michael Phelps
+                    <img src="../images/phelps.webp" alt="Phelps">
+                </li>
+                <li>Cesar Cielo
+                    <img src="../images/cielo.jpg" alt="Cielo">
+                </li>
+                <li>Nicholas Santos
+                    <img src="../images/santos.jpg" alt="Santos">
+                </li>
+                <li>Adam Peaty
+                    <img src="../images/peaty.jpg" alt="Peaty">
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h4>My favorite swimming race</h4>
+            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=SsfX1_psc6o"></iframe>
+            <a href="https://www.youtube.com/watch?v=SsfX1_psc6o">Link</a>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
