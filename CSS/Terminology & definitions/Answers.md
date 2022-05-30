@@ -72,7 +72,7 @@ Padding
 
 ### 12. Would you use margin or padding if you wanted two elements to overlap each other?
 
-??
+Margin. Negative margin can be used
 
 ### 13. What is the difference between a block element and an inline element?
 
@@ -143,7 +143,9 @@ Align-items set vertical alignment if flex-direction is row or horizontal if it'
 
 ### 24. How do you use flexbox to completely center a div inside a flex container?
 
-`.flex-container { display: flex; justify-content: center; align-items: center; }`
+```
+.flex-container { display: flex; justify-content: center; align-items: center; }
+```
 
 ### 25. What’s the difference between justify-content: space-between and justify-content: space-around?
 

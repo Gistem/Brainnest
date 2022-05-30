@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 2px 4px #444;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+.light-blue {
+    /* hex */
+  background: #2196f3;
+  width: 300px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 10px;
+  border: solid 1px;
+  transition: 1s;
+}
+
+.light-blue:hover {
+  transition: 1s;
+  background: #fff;
+  border: solid 1px #222;
+  color: #222;
+}
+
+.yellow {
+    /* hsl */
+  background: hsl(56, 90%, 55%);
+  width: 300px;
+  color: #222;
+  letter-spacing: 2px;
+  margin: 10px;
+  border: solid 1px hsl(56, 90%, 55%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 9px rgba(48, 46, 46, 0.568);
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.yellow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(350px);
+  transition: 0.3s;
+}
+
+.yellow:hover {
+    transform: translateY(-10px);
+}
+.yellow:hover::before {
+    transform: skewX(45deg) translateX(-50px);
+}
+
+.orange {
+    /* rgb */
+  background: rgb(244, 137, 37);
+  width: 300px;
+  color: #222;
+  letter-spacing: 2px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.orange:hover {
+    width: 310px;
+    box-shadow: 0 2px 4px #444;
+  }
+
+.grey {
+    /* hwb */
+    background: hwb(0 100% 0%);
+    width: 300px;
+    color: hsl(0, 0%, 13%);
+    letter-spacing: 2px;
+    margin: 10px;
+    border: solid 1px hsl(0, 0%, 13%);
+    transition: all 0.3s ease;
+  }
+
+  .grey:hover {
+      transform: translateY(-5px);
+  }
+
