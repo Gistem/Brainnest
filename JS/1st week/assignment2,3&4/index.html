@@ -9,71 +9,96 @@
 </head>
 <body>
     <script src="script.js"></script>
-    <section>
+    <header>
+        <ul class="menu">
+            <li><a href="#assignment1">Assignment 1</a></li>
+            <li><a href="#assignment2">Assignment 2</a></li>
+            <li><a href="#main">Rock - Paper - Scissors</a></li>
+        </ul>
+    </header>
+    <section id="assignment1">
+        <div class="heading">
+            <h2>Assignment 2</h2>
+        </div>
         <div class="content">
-            <h1>Assignment 2</h1>
             <div class="square">
                 <div class="input">
-                    <label>Enter the length:</label>
-                    <input type="number" id="sqVal" required="true"/>
-                    <button onclick="calcSquare()"> = </button>
+                    <p>
+                        <label>Enter the length:</label>
+                        <input type="number" id="sqVal" required="true"/>
+                        <button onclick="calcSquare()"> = </button>
+                    </p>
                 </div>
                 <div class="result">
-                    <span>The diagonal of the square is: <span id="sqResult"></span></span>
+                    <p>The diagonal of the square is: <span id="sqResult"></span></p>
                 </div>
             </div>
-            <div class="triangle">
+            <div>
                 <div class="input">
-                    <label>Enter the length:</label>
-                    <input type="number" id="trVal1" required="true"/>
-                    <input type="number" id="trVal2" required="true"/>
-                    <input type="number" id="trVal3" required="true"/>
-                    <button onclick="calcTriangle()"> = </button>
+                    <p>
+                        <label>Enter the length:</label>
+                        <input class="triangle" type="number" id="trVal1" required="true"/>,
+                        <input class="triangle" type="number" id="trVal2" required="true"/>,
+                        <input class="triangle" type="number" id="trVal3" required="true"/>
+                        <button onclick="calcTriangle()"> = </button>
+                    </p>
                 </div>
                 <div class="result">
-                    <span>The area of the triangle is: <span id="trResult"></span></span>
+                    <p>The area of the triangle is: <span id="trResult"></span></p>
                 </div>
             </div>
             <div class="circle">
                 <div class="input">
-                    <label>Enter the radius: </label>
-                    <input type="number" id="circVal" required="true" />
-                    <button onclick="calcCircle()" > = </button>
+                    <p>
+                        <label>Enter the radius: </label>
+                        <input type="number" id="circVal" required="true" />
+                        <button onclick="calcCircle()" > = </button>
+                    </p>
                 </div>
                 <div class="result">
-                    <span>The circumference is: <span id="circCirc"></span></span>
-                    <span>The area is: <span id="circArea"></span></span>
+                    <p>The circumference is: <span id="circCirc"></span></p>
+                    <p>The area is: <span id="circArea"></span></p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="content">
-            <h1>Assignment 3</h1>
-
+    <section id="assignment2">
+        <div class="heading">
+            <h2>Assignment 3</h2>
+        </div>
+        
+        <div class="content3">
             <div>
-                <label>The larger number between </label>
-                <input type="number" id="larger1" required="true">
-                <span> and </span>
-                <input type="number" id="larger2" required="true">
-                <button onclick="largerNum()"> ? </button>
-                <span> Easy... <span id="largerRes"></span></span>
+                <p>
+                    <label>The larger number between </label>
+                    <input type="number" id="larger1" required="true">
+                    &
+                    <input type="number" id="larger2" required="true">
+                    <button onclick="largerNum()"> ? </button>
+                    <span> ... <span id="largerRes"></span></span>
+                </p>
             </div>
 
             <div>
-                <label>Even or odd??</label>
-                <input type="number" id="evenOddVal" required="true">
-                <button onclick="evenOdd()" > ? </button>
-                <span>... <span id="evenOddRes"></span></span>
+                <p>
+                    <label>Even or odd??</label>
+                    <input type="number" id="evenOddVal" required="true">
+                    <button onclick="evenOdd()" > ? </button>
+                    <span>... <span id="evenOddRes"></span></span>
+                </p>
             </div>
         </div>
     </section>
-    <section>
+    <section id="main">
+        <div class="heading">
+            <h2>Wanna play rock, paper, scissors??</h2>
+        </div>
         <div class="content">
-            <h3>Wanna play rock, paper, scissors??</h3>
-            <button onclick="letsPlay()"> LET'S PLAY </button>
-            <span> Me: <span id="myChoise"></span>  </span>
-            <span> Computer: <span id="computer"></span>  </span>
+            <button onclick="game()" class="playgame"> LET'S PLAY </button>
+            <p> Me: <span id="user"></span>  </p>
+            <p> Computer: <span id="computer"></span>  </p>
+            <p> Result: <span id= "roundResult"></span>  </p>
+            <p> Score: <span id="Score"></span> </p>
 
         </div>
     </section>

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    font-family: 'Poppins', serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.RPS {
+    background-color: #224870;
+}
+.content {
+    max-width: calc(40% - 40px);
+    min-width: calc(30%);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #555;
+    align-items: center;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 0px 1px #111; */
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+.options  {
+    display: flex;
+    justify-content: space-around;
+}
+p {
+    background-color: #777;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 0px 1px #111;
+}
+.playgame {
+    position: relative;
+    background: #888;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    color: #2196f3;
+    margin: 5px;
+    padding:  15px;
+    font-style: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 1s;
+    font-size: 60px;
+  }
+  
+  .playgame:hover {
+    transition: 1s;
+    background: #fff;
+    color: #444;
+    border: none;
+    /* border: solid 2px #444; */
+  }
+/* CALCULATOR */
+.calc {
+    background-color: #FFCC80;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #333;
+    box-shadow: 1px 1px 0px 1px #111
+}
+
+button:active {
+    background-color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #555;
+}
+
+#value-actual {
+    font-size: 1.5em;
+}
+
+#value-lastest {
+    font-size: 2em;
+}

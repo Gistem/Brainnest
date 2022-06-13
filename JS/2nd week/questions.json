@@ -1,0 +1,120 @@
+{
+    "questions": {
+        "1": {
+            "question":"1. Why is it important to write clean code?",
+            "answer":"Because it would be easier to read, understand and maintain"
+        },
+        "2": {
+            "question":"2. What is the difference between good comments and bad comments?",
+            "answer":"A good comment tells how the code works and should be written to be understanded for others, a bad doesn't help all the readers to understand the code"
+        },
+        "3": {
+            "question":"3. What is an array?",
+            "answer":"It's an object (in javascript) that is used as a data structure"
+        },
+        "4": {
+            "question":"4. What are arrays useful for?",
+            "answer":"Are useful to store different types of values in a single variable, in an ordered way"
+        },
+        "5": {
+            "question":"5. How do you access an array element?",
+            "answer":"array[number of the bracket]"
+        },
+        "6": {
+            "question":"6. How do you change an array element?",
+            "answer":"array[number of the bracket]= new value; "
+        },
+        "7": {
+            "question":"7. What are some useful array properties?",
+            "answer":"length"
+        },
+        "8": {
+            "question":"8. What are some useful array methods?",
+            "answer":"push, pop, shift, unshift, slice, splice, map, includes, reduce, forEach"
+        },
+        "9": {
+            "question":"9. What are loops useful for?",
+            "answer":"Are useful to repeat code a set number of times"
+        },
+        "10": {
+            "question":"10. What is the break statement?",
+            "answer":"It's a statement used to stop the execution of the code"
+        },
+        "11": {
+            "question":"11. What is the continue statement?",
+            "answer":"it's a statement used to skip and continue or repeat the execution of the code"
+        },
+        "12": {
+            "question":"12. What is the DOM?",
+            "answer":"The HTML DOM is a standard object model and programming interface for HTML"
+        },
+        "13": {
+            "question":"13. How do you target the nodes you want to work with?",
+            "answer":"Using selectors"
+        },
+        "14": {
+            "question":"14. How do you create an element in the DOM?",
+            "answer":"document.createElement(element)"
+        },
+        "15": {
+            "question":"15. How do you add an element to the DOM?",
+            "answer":"element.appendChild(element you want to add)"
+        },
+        "16": {
+            "question":"16. How do you remove an element from the DOM?",
+            "answer":"element.removeChild(element)"
+        },
+        "17": {
+            "question":"17. How can you alter an element in the DOM?",
+            "answer":"Using innerText, innerHTML, setAttribute"
+        },
+        "18": {
+            "question":"18. When adding text to a DOM element, should you use textContent or innerHTML?",
+            "answer":"If it's only text, textContent... it's safer"
+        },
+        "19": {
+            "question":"19. Where should you include your JavaScript tag in your HTML file when working with DOM nodes?",
+            "answer":"In the head or in the body, depending on when you want the JavaScript to load"
+        },
+        "20": {
+            "question":"20. How do “events” and “listeners” work?",
+            "answer":"You set a listener for an event, when the event occurs, the element iterates through the listeners hearing that event, informing the event"
+        },
+        "21": {
+            "question":"21. What are three ways to use events in your code?",
+            "answer":"Inline, using a property, or using a listener"
+        },
+        "22": {
+            "question":"22. Why are event listeners the preferred way to handle events?",
+            "answer":"Because you can only have one event handler for a specific type and is not the case with the event listeners"
+        },
+        "23": {
+            "question":"23. What are the benefits of using named functions in your listeners?",
+            "answer":"That you can call it in different situations getting a cleaner code"
+        },
+        "24": {
+            "question":"24. How do you attach listeners to groups of nodes?",
+            "answer":".addEventListener"
+        },
+        "25": {
+            "question":"25. What is the difference between the return values of querySelector and querySelectorAll?",
+            "answer":"That querySelector returns the first single element that matches and querySelectorAll returns all elements that match"
+        },
+        "26": {
+            "question":"26. What does a “nodelist” contain?",
+            "answer":"element nodes, attribute nodes and text nodes"
+        },
+        "27": {
+            "question":"27. Explain the difference between “capture” and “bubbling”.",
+            "answer":" Bubbling first run the event on the element and then on his parents. When capture, first run the handler on the parents and then on the childs"
+        },
+        "28": {
+            "question":"28. What is the difference between objects and arrays?",
+            "answer":"The difference is that arrays provide you an index and are iterable"
+        },
+        "29": {
+            "question":"29. How do you access object properties?",
+            "answer":"Object.property or Object[property]"
+        }
+    }
+}
